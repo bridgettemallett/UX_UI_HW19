@@ -1,0 +1,293 @@
+html {
+    background-color: #000000;
+    overflow: scroll;
+}
+header {
+    display: inline;
+    text-align: center;
+    padding: 0%;
+    margin: 2%, 2%, 1%, 5%;
+}
+#logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+    display: inline;
+    margin-top: 5px;
+    margin-bottom: 6%;
+    float:left;
+}
+nav {
+    display: inline;
+    text-align: right;
+    font-size: 24px;
+    color: #707070;
+    font-family: anisette-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 73%;
+    padding: 1%;
+    margin-top: 2%;
+    margin-bottom:6%;
+    float: right;
+}
+nav h4{
+    color:#FFFFFF;
+}
+#hero {
+    height: 100%;
+    width:100%;
+    padding: 0px;
+    background-image: url(images/JUMPTROPBOTTOM.png);
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0%;
+}
+body {
+    margin-top: 0%;
+}
+.herocontent {
+    margin-top: 5%;
+    padding:1%;
+    font-size: 32px;
+    font-family: cronos-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    text-align: center;
+}
+.ciao{
+    margin-top: 5%;
+    padding-left: 5%;
+}
+h1 {
+    font-size: 68px;
+    color: #FFFFFF;
+    font-family: anisette-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+}
+h2 {
+    font-size: 48px;
+    color: #FFFFFF;
+    font-family: anisette-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+}
+h4 {
+    font-size: 28px;
+    color: #D9D7D7;
+    font-family: anisette-petite, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+li {
+    display: inline-block;
+    font-size: 24px;
+    align-items: right;
+    padding:center;
+}
+#footer {
+    Height: 100px;
+    width: 100%;
+    bottom: 0;
+    display: inline-flex;
+    background-color: #D9D7D7;
+    position: sticky;
+}
+ul {
+    display: inline;
+    vertical-align: top;   
+}
+#copyright{
+    vertical-align: bottom;
+    text-align: left;
+    display: inline-block;
+    padding-bottom: 0%;
+}
+#copyright h4{
+    color:#000000;
+}
+.footerinline {
+    display: inline-flex;
+    text-align: top;
+    justify-content: flex-end;
+    padding:1%;
+    vertical-align: top;
+    float: right;
+}
+.skillsection{
+    padding: 1%;
+}
+#skillset{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    padding:1%;
+    margin:1%;
+}
+.skill{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1D1D1D;
+    padding:1px;
+    width:30%;
+}
+
+#skill img{
+    vertical-align: middle;
+    width:75%;
+}
+h3{
+  font-size:30px;
+  font-family: anisette-petite, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#ffffff;
+}
+.skilluse{
+    font-size: 16pt;
+    font-family:cronos-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#D9D7D7;
+}
+#work{
+    display:grid;
+    padding: 5%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 5%;
+}
+#WorkExamples h3{
+    font-size: 32px;
+    justify-content: center;
+    text-align: center;
+}
+.workex{
+    display:grid;
+    padding: 1%;
+    background-color: #1D1D1D;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    title title image
+    casestudies casestudies image;
+    align-items: center;
+}
+.title h4{
+    display:grid;
+    font-size: 24pt;
+    font-family: anisette-petite, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    align-items:stretch;
+}
+p.casestudies{
+    font-size: 24pt;
+    font-family:cronos-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#D9D7D7;
+}
+.title p.casestudies{
+    text-align: left;
+}
+
+#casestudy3{
+    margin-bottom: 0%;
+}
+h4 .workex{
+    justify-content: center;
+}
+#connect{
+    margin-top: 0%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 10%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#LetsConnect{
+    display:grid;
+    align-items: center;
+    padding: 1%;
+}
+#formtitle{
+    align-items: center;
+    margin-top: 0%;
+    padding-top: 0%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h3 #formtitle{
+    font-size: 32pt;
+    text-align: center;
+    justify-content: center;
+}
+form{
+    display: grid;
+    padding:1px;
+    align-items: center;
+    font-family:cronos-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#ffffff;
+}
+h5{
+    font-size: 20pt;
+    font-family:cronos-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#ffffff;
+    text-align: center;
+}
+@media only screen and (max-width:600px){
+    #skillset{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: space-around;
+        padding:1%;
+        margin: 1%;
+    }
+    .skill{
+        display:flex;
+        flex-direction:column;
+        column-width: 100%;
+        align-items: center;
+        justify-content: center;
+    }   
+    #work {
+            display:grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr 1fr 1fr;
+    }
+    .workex {
+            display:grid;
+            grid-template-columns: 75% 25%;
+            grid-template-rows: 20% 80%;
+            height:30%;
+            width:100%;
+    }
+    .button {
+        font-size: 24pt;
+        font-family:cronos-pro, sans-serif;
+        font-weight: 700;
+        font-style: bold;
+        color:#1D1D1D;
+        background-color: #ffffff;
+        padding: 28px 40px;
+        margin:3%;
+        justify-items: right;
+     }
