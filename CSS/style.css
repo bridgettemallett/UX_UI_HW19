@@ -85,12 +85,51 @@ h4 {
     font-weight: 400;
     font-style: normal;
 }
-li {
+  
+  li {
     display: inline-block;
-    font-size: 24px;
-    align-items: right;
-    padding:center;
-}
+    padding: 0 20px;
+    align-items:top;
+  }
+  
+  span {
+    position: relative;
+    display: inline;
+    cursor: pointer;
+    float: right;
+  }
+  
+  span:before, span:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #fff;
+  }
+  
+  span:before {
+    left: -2.5px;
+  }
+  span:after {
+    right: 2.5px;
+    background: #fff;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  span:hover:before {
+    background: #fff;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  span:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+  }
+    
 #footer {
     Height: 100px;
     width: 100%;
@@ -137,7 +176,7 @@ ul {
     align-items: center;
     justify-content: space-evenly;
     background-color: #1D1D1D;
-    padding:1px;
+    padding:1%;
     width:30%;
 }
 
@@ -208,6 +247,48 @@ p.casestudies{
 h4 .workex{
     justify-content: center;
 }
+.imagecontainer {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .imagecontainer:hover .image {
+    opacity: 0.3;
+  }
+  
+  .imagecontainer:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #A6567B;
+    color: white;
+    font-size: 16px;
+    font-family: anisette-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 16px 32px;
+  }
 #connect{
     margin-top: 0%;
     margin-left: 30%;
@@ -243,6 +324,20 @@ form{
     font-family:cronos-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
+    color:#ffffff;
+}
+label{
+    font-family:cronos-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26pt;
+    color:#ffffff;
+}
+input{
+    font-family:cronos-pro, sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 26pt;
     color:#ffffff;
 }
 h5{

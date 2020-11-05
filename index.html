@@ -6,12 +6,12 @@
    <header>
        <title>Bridgette Mallett Portfolio</title>
        <div id="logo" class="inline"><img src="/Users/brigginainteasy/Documents/00-MyCode/UX_UI_HW19/UX_UI_HW19/CSS/images/Logo_White.png"></div>
-       <nav><ul><h4>
-           <li>The Designer | </li>
-           <li>Work | </li>
-           <li>Resume | </li>
-           <li>Contact</li>
-       </h4></ul></nav></div>
+      <nav><ul><h4>
+           <li><span>The Designer</span></li>
+           <li><span>Work</span></li>
+           <li><span>Resume</span></li>
+           <li><span>Contact</span></li>
+       </h4></ul></nav>
    </header>
 <section id="hero">
     <div id="ciao"></div>
@@ -56,21 +56,35 @@
        <div class="workex" id="casestudy1">
            <div class="title"><h4>MASKED MEETUP</h4>
            <p class="casestudies">In a group design challenge we created an app that helps people start to socialize again following the coronavirus outbreak. It provides a variety of safe activities and Meetups for based on the users preferences.</p></div>
-           <img src="/Users/brigginainteasy/Documents/00-MyCode/UX_UI_HW19/UX_UI_HW19/CSS/images/MaskedMeetup.png" alt="Masked Meetups Homescreen">
-       </div>
+           <div class="imagecontainer">
+           <img src="/Users/brigginainteasy/Documents/00-MyCode/UX_UI_HW19/UX_UI_HW19/CSS/images/MaskedMeetup.png" alt="Masked Meetups Homescreen" class="image">
+           <div class="middle">
+            <div class="text">Read More</div>
+          </div>
+        </div>
+   </div>
        <p></p>
        <p></p>
        <div class="workex" id=casestudy2>
         <div class="title"><h4>IMPACKED</h4>
            <p class="casestudies">Impacked was developed as part of an individual four week design challenge. The app allows travelers to book accomodations and choose a local cause that 10% of their booking cost will go to.</p></div>
-           <img src="/Users/brigginainteasy/Documents/00-MyCode/UX_UI_HW19/UX_UI_HW19/CSS/images/Impacked.png" alt="Impacked Homescreen">
+           <div class="imagecontainer">
+           <img src="/Users/brigginainteasy/Documents/00-MyCode/UX_UI_HW19/UX_UI_HW19/CSS/images/Impacked.png" alt="Impacked Homescreen" class="image">
+           <div class="middle">
+            <div class="text">Read More</div>
+          </div>
+        </div>
        </div>
        <p></p>
        <p></p>
        <div class="workex" id="casestudy3">
            <div class="title"><h4>ADAPTIVE RECREATION FOR CHILDHOOD HEALTH</h4>
            <p class="casestudies">In order to help boost enrollment of both participants and volunteers, I worked with this nonprofit to help redesign the contact options, as well as, redesign the site so it stands alone. </p></div>
-           <img src="/Users/brigginainteasy/Documents/00-MyCode/UX_UI_HW19/UX_UI_HW19/CSS/images/ARCH.png" alt="ARCH Homescreen Desktop">
+           <div class="imagecontainer">
+           <img src="/Users/brigginainteasy/Documents/00-MyCode/UX_UI_HW19/UX_UI_HW19/CSS/images/ARCH.png" alt="ARCH Homescreen Desktop" class="image">
+           <div class="middle">
+            <div class="text">Read More</div>
+          </div>
         </div>
    </div>
 </section>
@@ -82,17 +96,17 @@
         <form>
            <h5>Contact Information</h5>
            <label for=“fname”>First Name:</label><br>
-           <input type=“text” id=“fname” name=“fname”><br>
+           <input type=“text” id=“firstName” name=“fname”><br>
            <label for=“lname”>Last Name:</label><br>
-           <input type=“text” id=“lname” name=“lname”><br>
+           <input type=“text” id=“lastName” name=“lname”><br>
            <label for=“email”>Email:</label><br>
            <input type=“text” id=“email” name=“email”><br>
-           <label for=“phone”>Phone Number:</label><br>
+           <label for=“phone”>Phone Number: optional</label><br>
            <input type=“text” id=“phone” name=“phone”><br>
            <label><h5>What would you like to chat about?</h5></label>
-           <textarea id=“contactrequest” name=“requestfield” rows=“50” cols=“50”></textarea>
+           <textarea id=“contactRequest” name=“requestfield” rows=“50” cols=“50”></textarea>
        </form>
-       <button onclick="SubmitFunction()">Submit</button>
+       <button id="submitbutton" onclick="sayThanks()">Submit</button>
     </div>
 </section>
 </body>
